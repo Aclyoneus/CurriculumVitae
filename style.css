@@ -13,6 +13,14 @@ body {
     font-size: 1.6rem;
 }
 
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/*HEADER*/
+
 .header-container {
     display: flex;
     align-items: center;
@@ -30,6 +38,8 @@ body {
     color: #fcf4a5;
 }
 
+/*NAVBAR*/
+
 .navbar-container {
     padding: 0 30rem;
     display: flex;
@@ -38,7 +48,7 @@ body {
 }
 
 .navbar-link {
-    padding-top: 1.5rem;
+    margin: 1rem 0;
     text-decoration: none;
     color: inherit;
     border-bottom: 0.2rem solid rgba(0, 0, 0, 0);
@@ -49,3 +59,68 @@ body {
     border-bottom: 0.2rem solid #000;
 }
 
+/*PERSONALS*/
+
+.personals-upper {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.personals-photo {
+    height: 20rem;
+    border-radius: 50%;
+    position: relative;
+    top: 4rem;
+}
+
+.personals-lower {
+    margin-top: 8rem;
+    background-color: #fbfbfb;
+    display: flex;
+}
+
+.qrcode {
+    padding-left: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.qrcode-image {
+    height: 14rem;
+}
+
+.qrcode-description {
+    padding-bottom: 2rem;
+    font-weight: bold;
+}
+
+.personals-text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.personals-text__name {
+    text-transform: uppercase;
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+}
+
+.personals-text__data {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 2.5rem;
+}
+
+span {
+    font-weight: bold;
+}
