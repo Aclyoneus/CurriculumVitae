@@ -30,3 +30,22 @@ body {
     color: #fcf4a5;
 }
 
+.navbar-container {
+    padding: 0 30rem;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+}
+
+.navbar-link {
+    padding-top: 1.5rem;
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 0.2rem solid rgba(0, 0, 0, 0);
+    transition: border-bottom 0.5s;
+}
+
+.navbar-link:hover {
+    border-bottom: 0.2rem solid #000;
+}
+
