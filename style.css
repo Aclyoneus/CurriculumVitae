@@ -11,6 +11,7 @@ html {
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.6rem;
+    box-sizing: border-box
 }
 
 .wrapper {
@@ -161,6 +162,7 @@ span {
 .experience-container {
     height: 100%;
     width: 100%;
+    padding: 2rem 5rem 2rem 5rem;
     background-color: #fbfbfb;
 }
 
@@ -173,7 +175,7 @@ span {
     display: flex;
     justify-content: center;
     text-transform: uppercase;
-    margin: 4rem 2rem 0.8rem 2rem;
+    margin: 2rem 2rem 0.8rem 2rem;
 }
 
 .fa-briefcase {
@@ -186,15 +188,32 @@ span {
 }
 
 .experience-company {
-    margin-top: 1rem;
-    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
     font-size: 2rem;
 }
 
 .experience-position {
-    display: flex;
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+}
+
+.experience-position__text {
+    padding-left: 2.2rem;
+    font-weight: bold;
+    font-size: 1.8rem;
 }
 
 .experience-list {
     list-style-position: inside;
+    margin-top: 0.8rem;
+    padding-left: 2rem;
+}
+
+.fa-solid {
+    transition: color 0.3s;
+}
+
+.experience-card:hover .fa-solid{
+    color: #fcda05;
 }
