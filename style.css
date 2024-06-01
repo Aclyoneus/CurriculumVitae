@@ -19,6 +19,11 @@ body {
     max-width: 1200px;
 }
 
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
 /*HEADER*/
 
 .header-container {
@@ -70,19 +75,21 @@ body {
 
 .personals-photo {
     height: 20rem;
+    border: 4px solid #fcda05;
     border-radius: 50%;
     position: relative;
     top: 4rem;
 }
 
 .personals-lower {
-    padding-top: 8rem;
+    padding-top: 3rem;
     background-color: #fbfbfb;
     display: flex;
 }
 
 .qrcode {
     padding-left: 4rem;
+    padding-top: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,15 +98,26 @@ body {
 
 .qrcode-image {
     height: 14rem;
+    margin-top: 1rem;
 }
 
 .qrcode-description {
-    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    padding: 3px 6px;
+    font-size: 1.8rem;
     font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+}
+
+.qrcode-description:hover {
+    color: #fcda05;
 }
 
 .personals-text {
     width: 100%;
+    padding-right: 18rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,7 +126,7 @@ body {
 
 .personals-text__name {
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 3.5rem;
     letter-spacing: 0.3rem;
 }
 
@@ -119,6 +137,10 @@ body {
     align-items: center;
     flex-direction: column;
     line-height: 2.5rem;
+}
+
+.personals-text__line {
+    font-size: 1.8rem;
 }
 
 span {
