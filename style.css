@@ -39,6 +39,29 @@ a:visited, a:hover, a:link, a:active {
     margin: auto;
 }
 
+.section-container {
+    height: 100%;
+    width: 100%;
+    padding: 2rem 5rem 2rem 5rem;
+    background-color: #fbfbfb;
+}
+
+.section-header {
+    display: flex;
+    justify-content: center;
+}
+
+.section-header__text {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    margin: 2rem 2rem 0.8rem 2rem;
+}
+
+.section-header__icon {
+    margin-right: 1rem;
+}
+
 /*HEADER*/
 
 .header-container {
@@ -158,51 +181,28 @@ a:visited, a:hover, a:link, a:active {
 
 /*EXPERIENCE*/
 
-.experience-container {
-    height: 100%;
-    width: 100%;
-    padding: 2rem 5rem 2rem 5rem;
-    background-color: #fbfbfb;
-}
-
-.experience-header {
-    display: flex;
-    justify-content: center;
-}
-
-.experience-header__text {
-    display: flex;
-    justify-content: center;
-    text-transform: uppercase;
-    margin: 2rem 2rem 0.8rem 2rem;
-}
-
-.fa-briefcase {
-    margin-right: 1rem;
-}
-
-.experience-company {
+.section-card__title {
     margin-top: 2rem;
     margin-bottom: 0.8rem;
     font-size: 2rem;
 }
 
-.experience-position {
+.section-card__descripiton {
     display: flex;
     justify-content: space-between;
 }
 
-.experience-position__text {
+.section-description__text {
     padding-left: 2.2rem;
     font-weight: bold;
     font-size: 1.8rem;
 }
 
-.experience-position__date {
+.section-description__date {
     min-width: 150px;
 }
 
-.experience-list {
+.section-list {
     list-style-position: inside;
     margin-top: 0.8rem;
     padding-left: 2rem;
@@ -212,9 +212,19 @@ a:visited, a:hover, a:link, a:active {
     transition: color 0.3s;
 }
 
-.experience-card:hover .arrow-icon {
+.section-card:hover .arrow-icon {
     color: #fcda05;
 }
 
 /*EDUCATION*/
 
+/*ACHIEVEMENTS*/
+
+.achievements-entry {
+    margin-top: 2rem;
+    font-weight: 400;
+}
+
+achievements-entry__text {
+    font-weight: 400;
+}
