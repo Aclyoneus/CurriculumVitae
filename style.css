@@ -220,13 +220,35 @@ a:visited, a:hover, a:link, a:active {
 
 /*ACHIEVEMENTS*/
 
-.achievements-entry, .languages-entry {
+.achievements-entry, .languages-entry, .hobbies-entry {
     margin-top: 2rem;
 }
-
-/*LANGUAGES*/
 
 .section-card__descripiton:hover .arrow-icon {
     color: #fcda05;
 }
 
+/*LANGUAGES*/
+
+/*SKILLS*/
+
+/*HOBBIES*/
+
+/*FOOTER*/
+
+.footer-permission {
+    padding: 1.5rem 0;
+    background-color: ;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.footer-copy {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 0;
+    background-color: black;
+    color: #fcf4a5;
+    font-size: 1.5rem;
+}

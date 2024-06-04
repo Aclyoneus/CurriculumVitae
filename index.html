@@ -22,7 +22,7 @@
     <body>
         <header class="header">
             <div class="header-container">
-                <img class="header-logo" src="./img/logo.png">
+                <img class="header-logo" src="./img/logo.png" alt="Logo with letters WW">
                 <h1 class="header-title">
                     Curriculum Vitae
                 </h1>
@@ -40,14 +40,14 @@
             </div>
         </nav>
         <main>
-            <section class="personals">
+            <section class="personals" id="personals">
                 <div class="personals-container wrapper">
                     <div class="personals-upper">
-                        <img class="personals-photo" src="img/me.jpg">
+                        <img class="personals-photo" src="img/me.jpg" alt="Photo of the CV owner">
                     </div>
                     <div class="personals-lower">
                         <div class="qrcode">
-                            <img class="qrcode-image" src="img/linkedin.png">
+                            <img class="qrcode-image" src="img/linkedin.png" alt="QR Code with link to linkedin">
                             <a class="qrcode-description" href="https://www.linkedin.com" target="_blank">Linkedin</a>
                         </div>
                         <div class="personals-text">
@@ -63,7 +63,7 @@
                     <hr class="section-splitter">
                 </div>
             </section>
-            <section class="experience">
+            <section class="experience" id="experience">
                 <div class="section-container experience-container wrapper">
                     <div class="section-header experience-header">
                         <h2 class="section-header__text experience-header__text"><i class="section-header__icon fa-solid fa-briefcase"></i> Work Experience</h2>
@@ -115,7 +115,7 @@
                     </div>
                 </div>
             </section>
-            <section class="education">
+            <section class="education" id="education">
                 <div class="section-container education-container wrapper">
                     <div class="section-header education-header">
                         <h2 class="section-header__text education-header__text"><i class="section-header__icon fa-solid fa-user-graduate"></i> Education</h2>
@@ -133,7 +133,7 @@
                     </div>
                 </div>
             </section>
-            <section class="achievements">
+            <section class="achievements" id="achievements">
                 <div class="section-container achievements-container wrapper">
                     <div class="section-header achievements-header">
                         <h2 class="section-header__text achievements-header__text"><i class="section-header__icon fa-solid fa-trophy"></i> Achievements</h2>
@@ -153,31 +153,84 @@
                     </div>
                 </div>
             </section>
-            <section class="languages">
+            <section class="languages" id="languages">
                 <div class="section-container languages-container wrapper">
                     <div class="section-header languages-header">
                         <h2 class="section-header__text languages-header__text"><i class="section-header__icon fa-solid fa-earth-americas"></i> Languages</h2>
                     </div>
                     <hr class="section-header__underline">
-                    <div class="section-card__descripiton languages-entry">
-                        <p class="languages-entry__text"><i class="arrow-icon fa-solid fa-play"></i> English - Advanced</p>
-                    </div>
-                    <div class="section-card__descripiton languages-entry">
-                        <p class="languages-entry__text"><i class="arrow-icon fa-solid fa-play"></i> German - Intermediate</p>
-                    </div>
-                    <div class="section-card__descripiton languages-entry">
-                        <p class="languages-entry__text"><i class="arrow-icon fa-solid fa-play"></i> Spanish - Basic</p>
+                    <div class="languages-cards">
+                        <div class="section-card__descripiton languages-entry">
+                            <p class="languages-entry__text"><i class="arrow-icon fa-solid fa-play"></i> English - Advanced</p>
+                        </div>
+                        <div class="section-card__descripiton languages-entry">
+                            <p class="languages-entry__text"><i class="arrow-icon fa-solid fa-play"></i> German - Intermediate</p>
+                        </div>
+                        <div class="section-card__descripiton languages-entry">
+                            <p class="languages-entry__text"><i class="arrow-icon fa-solid fa-play"></i> Spanish - Basic</p>
+                        </div>
                     </div>
                 </div>
             </section>
-            <section class="skills">
-
+            <section class="skills" id="skills">
+                <div class="section-container skills-container wrapper">
+                    <div class="section-header skills-header">
+                        <h2 class="section-header__text skills-header__text"><i class="section-header__icon fa-solid fa-brain"></i> Skills</h2>
+                    </div>
+                    <hr class="section-header__underline">
+                    <div class="skills-cards">
+                        <div class="section-card__descripiton languages-entry">
+                            <p class="languages-entry__text"><i class="arrow-icon fa-solid fa-play"></i> Management Skills</p>
+                        </div>
+                        <div class="section-card__descripiton languages-entry">
+                            <p class="languages-entry__text"><i class="arrow-icon fa-solid fa-play"></i> Soft Skills</p>
+                        </div>
+                        <div class="section-card__descripiton languages-entry">
+                            <p class="languages-entry__text"><i class="arrow-icon fa-solid fa-play"></i> Analitycal Thinking</p>
+                        </div>
+                        <div class="section-card__descripiton languages-entry">
+                            <p class="languages-entry__text"><i class="arrow-icon fa-solid fa-play"></i> Assertiveness</p>
+                        </div>
+                        <div class="section-card__descripiton languages-entry">
+                            <p class="languages-entry__text"><i class="arrow-icon fa-solid fa-play"></i> Multitasking</p>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <section class="hobbies">
-
+            <section class="hobbies" id="hobbies">
+                <div class="section-container hobbies-container wrapper">
+                    <div class="section-header hobbies-header">
+                        <h2 class="section-header__text hobbies-header__text"><i class="section-header__icon fa-solid fa-chess"></i> Hobbies</h2>
+                    </div>
+                    <hr class="section-header__underline">
+                    <div class="hobbies-cards">
+                        <div class="section-card__descripiton hobbies-entry">
+                            <p class="languages-entry__text"><i class="arrow-icon fa-solid fa-play"></i> Sports: weight training, soccer, billiards, table tennis</p>
+                        </div>
+                        <div class="section-card__descripiton hobbies-entry">
+                            <p class="hobbies-entry__text"><i class="arrow-icon fa-solid fa-play"></i> Technology news</p>
+                        </div>
+                        <div class="section-card__descripiton hobbies-entry">
+                            <p class="hobbies-entry__text"><i class="arrow-icon fa-solid fa-play"></i> Historical fiction literature</p>
+                        </div>
+                        <div class="section-card__descripiton hobbies-entry">
+                            <p class="hobbies-entry__text"><i class="arrow-icon fa-solid fa-play"></i> Film music</p>
+                        </div>
+                        <div class="section-card__descripiton hobbies-entry">
+                            <p class="hobbies-entry__text"><i class="arrow-icon fa-solid fa-play"></i> Quizzes and crosswords</p>
+                        </div>
+                        <div class="section-card__descripiton hobbies-entry">
+                            <p class="hobbies-entry__text"><i class="arrow-icon fa-solid fa-play"></i> Computer games</p>
+                        </div>
+                    </div>
             </section>
-            <footer class="footer">
-
+            <footer class="footer" id="footer">
+                <div class="footer-description">
+                    <p class="footer-permission">
+                        I consent to the processing of my personal data for recruitment purposes in accordance with Art. 6 section 1 letter a Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016.
+                    </p>
+                </div>
+                <p class="footer-copy">&copy; 2024 CV Wojciech Wróbel</p>
             </footer>
         </main>
     </body>
