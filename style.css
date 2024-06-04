@@ -20,9 +20,23 @@ body {
     max-width: 1200px;
 }
 
-a:visited {
+a:visited, a:hover, a:link, a:active {
     text-decoration: none;
     color: black;
+}
+
+.section-splitter {
+    margin: auto;
+    width: 70%;
+    border: none;
+    height: 1px;
+    color: black;
+    background-color: black;
+}
+
+.section-header__underline {
+    width: 60rem;
+    margin: auto;
 }
 
 /*HEADER*/
@@ -56,8 +70,6 @@ a:visited {
 
 .navbar-link {
     margin: 1rem 0;
-    text-decoration: none;
-    color: inherit;
     border-bottom: 0.2rem solid rgba(0, 0, 0, 0);
     transition: border-bottom 0.5s;
 }
@@ -144,19 +156,6 @@ a:visited {
     font-size: 1.8rem;
 }
 
-span {
-    font-weight: bold;
-}
-
-.personals-underline {
-    margin: auto;
-    width: 70%;
-    border: none;
-    height: 1px;
-    color: black;
-    background-color: black;
-}
-
 /*EXPERIENCE*/
 
 .experience-container {
@@ -182,11 +181,6 @@ span {
     margin-right: 1rem;
 }
 
-.experience-underline {
-    width: 60rem;
-    margin: auto;
-}
-
 .experience-company {
     margin-top: 2rem;
     margin-bottom: 0.8rem;
@@ -194,8 +188,8 @@ span {
 }
 
 .experience-position {
-    display: grid;
-    grid-template-columns: 6fr 1fr;
+    display: flex;
+    justify-content: space-between;
 }
 
 .experience-position__text {
@@ -204,16 +198,23 @@ span {
     font-size: 1.8rem;
 }
 
+.experience-position__date {
+    min-width: 150px;
+}
+
 .experience-list {
     list-style-position: inside;
     margin-top: 0.8rem;
     padding-left: 2rem;
 }
 
-.fa-solid {
+.arrow-icon {
     transition: color 0.3s;
 }
 
-.experience-card:hover .fa-solid{
+.experience-card:hover .arrow-icon {
     color: #fcda05;
 }
+
+/*EDUCATION*/
+
