@@ -220,11 +220,13 @@ a:visited, a:hover, a:link, a:active {
 
 /*ACHIEVEMENTS*/
 
-.achievements-entry {
+.achievements-entry, .languages-entry {
     margin-top: 2rem;
-    font-weight: 400;
 }
 
-achievements-entry__text {
-    font-weight: 400;
+/*LANGUAGES*/
+
+.section-card__descripiton:hover .arrow-icon {
+    color: #fcda05;
 }
+
