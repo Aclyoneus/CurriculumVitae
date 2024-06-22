@@ -89,6 +89,10 @@ a:visited, a:hover, a:link, a:active {
     justify-content: space-around;
     font-size: 1.8rem;
     font-weight: bold;
+
+    /*@media (max-width: 768px) {*/
+    /*    padding: 0 0;*/
+    /*}*/
 }
 
 .navbar-link {
@@ -118,13 +122,12 @@ a:visited, a:hover, a:link, a:active {
 }
 
 .personals-lower {
-    padding-top: 3rem;
+    padding: 3rem 3rem 0;
     background-color: #fbfbfb;
     display: flex;
 }
 
 .qrcode {
-    padding-left: 4rem;
     padding-top: 1rem;
     display: flex;
     justify-content: center;
@@ -132,8 +135,12 @@ a:visited, a:hover, a:link, a:active {
     flex-direction: column;
 }
 
+.qrcode-mirror {
+    width: 17rem;
+}
+
 .qrcode-image {
-    height: 13rem;
+    width: 13rem;
     margin-top: 1rem;
 }
 
@@ -153,7 +160,6 @@ a:visited, a:hover, a:link, a:active {
 
 .personals-text {
     width: 100%;
-    padding-right: 18rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -250,4 +256,60 @@ a:visited, a:hover, a:link, a:active {
     background-color: black;
     color: #fcf4a5;
     font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+
+    .header-logo {
+        width: 70px;
+    }
+
+    .header-title {
+        font-size: 2rem;
+    }
+
+    .navbar-container {
+        padding: 0 0;
+        flex-direction: column;
+    }
+
+    .navbar-link {
+        display: flex;
+        justify-content: center;
+    }
+
+    .section-header__underline {
+        width: 80%;
+    }
+
+    .personals-lower {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .personals-text__name {
+        font-size: 3.2rem;
+    }
+
+    .qrcode-description {
+        margin-bottom: 1.2rem;
+    }
+
+    .personals-text__data {
+        align-items: flex-start;
+    }
+
+    .personals-text__line {
+        font-size: 1.6rem;
+    }
+
+    .section-splitter {
+        margin: 30px auto;
+    }
+
+    .section-header__text {
+        margin: 0;
+    }
+
+
 }
