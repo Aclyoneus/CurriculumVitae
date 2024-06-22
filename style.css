@@ -243,7 +243,7 @@ a:visited, a:hover, a:link, a:active {
 /*FOOTER*/
 
 .footer-permission {
-    padding: 1.5rem 0;
+    margin: 1.5rem 5rem;
     display: flex;
     justify-content: center;
     font-size: 1.2rem;
@@ -334,5 +334,34 @@ a:visited, a:hover, a:link, a:active {
 
     .section-list__text {
         margin-bottom: 0.8rem;
+    }
+
+    .footer-permission {
+        padding: 0.8rem;
+        margin-top: 2rem;
+    }
+
+    .section-list__text {
+        list-style-position: outside;
+    }
+
+    .footer-permission{
+        margin: 2rem auto;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .navbar-container {
+        padding: 0 0;
+    }
+
+    .navbar-link {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar-link {
+        font-size: 1.5rem;
     }
 }
