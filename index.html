@@ -16,15 +16,21 @@
                 href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
                 rel="stylesheet"
         >
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/9f8eebfb89.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <header class="header">
-            <h2 class="title">
-                Curriculum Vitae
-            </h2>
+            <div class="header-container">
+                <img class="header-logo" src="./img/logo.png" alt="Logo with letters WW">
+                <h1 class="header-title">
+                    Curriculum Vitae
+                </h1>
+            </div>
         </header>
-        <nav class="navigation">
-            <div class="navbar">
+        <nav class="navbar">
+            <div class="navbar-container">
                 <a class="navbar-link" href="#">Home</a>
                 <a class="navbar-link" href="#experience">Experience</a>
                 <a class="navbar-link" href="#education">Education</a>
@@ -35,28 +41,214 @@
             </div>
         </nav>
         <main>
-            <section class="experience">
-                <div class="container">
-
+            <section class="personals" id="personals">
+                <div class="personals-container wrapper">
+                    <div class="personals-upper">
+                        <img class="personals-photo" src="img/me.jpg" alt="Photo of the CV owner">
+                    </div>
+                    <div class="personals-lower">
+                        <div class="qrcode">
+                            <img class="qrcode-image" src="img/linkedin.png" alt="QR Code with link to linkedin">
+                            <a class="qrcode-description" href="https://www.linkedin.com" target="_blank">Linkedin</a>
+                        </div>
+                        <div class="personals-text">
+                            <h2 class="personals-text__name">wojciech wróbel</h2>
+                            <div class="personals-text__data">
+                                <p class="personals-text__line birth-date"><b>Date of Birth:</b> xx.xx.xxxx</p>
+                                <p class="personals-text__line phone"><b>Phone:</b> xxx-xxx-xxx</p>
+                                <p class="personals-text__line mail"><b>E-mail:</b> xxxxxxxx@gmail.com</p>
+                                <p class="personals-text__line residence"><b>Place of Residence:</b> Warsaw</p>
+                            </div>
+                        </div>
+                        <div class="qrcode-mirror"></div>
+                    </div>
+                    <hr class="section-splitter">
                 </div>
             </section>
-            <section class="education">
-
+            <section class="experience" id="experience">
+                <div class="section-container experience-container wrapper">
+                    <div class="section-header experience-header">
+                        <h2 class="section-header__text experience-header__text"><i class="section-header__icon fa-solid fa-briefcase"></i> Work Experience</h2>
+                    </div>
+                    <hr class="section-header__underline">
+                    <div class="section-description experience-description">
+                        <div class="section-card experience-card">
+                            <h3 class="section-card__title experience-company"><i class="arrow-icon fa-solid fa-play"></i> GOOGLE</h3>
+                            <div class="section-card__descripiton experience-position">
+                                <p class="section-description__text experience-position__text">Chef Executive Officer</p>
+                                <p class="section-description__date experience-position__date"> 06.2018 - </p>
+                            </div>
+                            <ul class="section-list experience-list">
+                                <li class="section-list__text experience-list__text">Lorem ipsum ipsum ipsum ipsum ipsum</li>
+                                <li class="section-list__text experience-list__text">Lorem ipsum ipsum ipsum</li>
+                                <li class="section-list__text experience-list__text">Lorem ipsum ipsum ipsum ipsum ipsum ipsum ipsum</li>
+                                <li class="section-list__text experience-list__text">Lorem ipsum ipsum</li>
+                                <li class="section-list__text experience-list__text">Lorem ipsum ipsum ipsum</li>
+                            </ul>
+                        </div>
+                        <div class="section-card experience-card">
+                            <h3 class="section-card__title experience-company"><i class="arrow-icon fa-solid fa-play"></i> SPACEX</h3>
+                            <div class="section-card__descripiton experience-position">
+                                <p class="section-description__text experience-position__text">Office Manager</p>
+                                <p class="section-description__date experience-position__date">02.2012 - 05.2018</p>
+                            </div>
+                            <ul class="section-list experience-list">
+                                <li class="section-list__text experience-list__text">Lorem ipsum ipsum ipsum ipsum ipsum</li>
+                                <li class="section-list__text experience-list__text">Lorem ipsum ipsum ipsum</li>
+                                <li class="section-list__text experience-list__text">Lorem ipsum ipsum ipsum ipsum ipsum ipsum ipsum</li>
+                                <li class="section-list__text experience-list__text">Lorem ipsum ipsum</li>
+                                <li class="section-list__text experience-list__text">Lorem ipsum ipsum ipsum</li>
+                            </ul>
+                        </div>
+                        <div class="section-card experience-card">
+                            <h3 class="section-card__title experience-company"><i class="arrow-icon fa-solid fa-play"></i> XTB</h3>
+                            <div class="section-card__descripiton experience-position">
+                                <p class="section-description__text experience-position__text">Data Analyst</p>
+                                <p class="section-description__date experience-position__date">01.2010 - 01.2012</p>
+                            </div>
+                            <ul class="section-list experience-list">
+                                <li class="section-list__text experience-list__text">Lorem ipsum ipsum ipsum ipsum ipsum</li>
+                                <li class="section-list__text experience-list__text">Lorem ipsum ipsum ipsum</li>
+                                <li class="section-list__text experience-list__text">Lorem ipsum ipsum ipsum ipsum ipsum ipsum ipsum</li>
+                                <li class="section-list__text experience-list__text">Lorem ipsum ipsum</li>
+                                <li class="section-list__text experience-list__text">Lorem ipsum ipsum ipsum</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <section class="achievements">
-
+            <section class="education" id="education">
+                <div class="section-container education-container wrapper">
+                    <div class="section-header education-header">
+                        <h2 class="section-header__text education-header__text"><i class="section-header__icon fa-solid fa-user-graduate"></i> Education</h2>
+                    </div>
+                    <hr class="section-header__underline">
+                    <div class="section-card education-card">
+                        <h3 class="section-card__title education-company"><i class="arrow-icon fa-solid fa-play"></i> OXFORD UNIVERSITY</h3>
+                        <div class="section-card__descripiton education-position">
+                            <p class="section-description__text education-position__text">Finances and Accounting</p>
+                            <p class="section-description__date education-position__date">09.2004 - 07.2009</p>
+                        </div>
+                        <ul class="section-list education-list">
+                            <li class="section-list__text education-list__text">Master's thesis: Analysis of the threat of a banking system crisis in Poland</li>
+                        </ul>
+                    </div>
+                </div>
             </section>
-            <section class="languages">
-
+            <section class="achievements" id="achievements">
+                <div class="section-container achievements-container wrapper">
+                    <div class="section-header achievements-header">
+                        <h2 class="section-header__text achievements-header__text"><i class="section-header__icon fa-solid fa-trophy"></i> Achievements</h2>
+                    </div>
+                    <hr class="section-header__underline">
+                    <div class="section-card__descripiton achievements-entry">
+                        <div class="achievements-entry__container">
+                            <i class="arrow-icon fa-solid fa-play"></i>
+                            <span class="achievements-entry__text">Top Management Award - Google (2 times)</span>
+                        </div>
+                        <span class="section-description__date achievements-entry__date">05.2019 & 05.2021</span>
+                    </div>
+                    <div class="section-card__descripiton achievements-entry">
+                        <div class="achievements-entry__container">
+                            <i class="arrow-icon fa-solid fa-play"></i>
+                            <span class="achievements-entry__text">Best Space Ship - SpaceX</span>
+                        </div>
+                        <span class="section-description__date achievements-entry__date">03.2015</span>
+                    </div>
+                    <div class="section-card__descripiton achievements-entry">
+                        <div class="achievements-entry__container">
+                            <i class="arrow-icon fa-solid fa-play"></i>
+                            <span class="achievements-entry__text"> XTB Employee of the Year</span>
+                        </div>
+                        <span class="section-description__date achievements-entry__date">12.2011</span>
+                    </div>
+                </div>
             </section>
-            <section class="skills">
-
+            <section class="languages" id="languages">
+                <div class="section-container languages-container wrapper">
+                    <div class="section-header languages-header">
+                        <h2 class="section-header__text languages-header__text"><i class="section-header__icon fa-solid fa-earth-americas"></i> Languages</h2>
+                    </div>
+                    <hr class="section-header__underline">
+                    <div class="languages-cards">
+                        <div class="section-card__descripiton languages-entry">
+                            <p class="languages-entry__text"><i class="arrow-icon fa-solid fa-play"></i> English - Advanced</p>
+                        </div>
+                        <div class="section-card__descripiton languages-entry">
+                            <p class="languages-entry__text"><i class="arrow-icon fa-solid fa-play"></i> German - Intermediate</p>
+                        </div>
+                        <div class="section-card__descripiton languages-entry">
+                            <p class="languages-entry__text"><i class="arrow-icon fa-solid fa-play"></i> Spanish - Basic</p>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <section class="hobbies">
-
+            <section class="skills" id="skills">
+                <div class="section-container skills-container wrapper">
+                    <div class="section-header skills-header">
+                        <h2 class="section-header__text skills-header__text"><i class="section-header__icon fa-solid fa-brain"></i> Skills</h2>
+                    </div>
+                    <hr class="section-header__underline">
+                    <div class="skills-cards">
+                        <div class="section-card__descripiton languages-entry">
+                            <p class="languages-entry__text"><i class="arrow-icon fa-solid fa-play"></i> Management Skills</p>
+                        </div>
+                        <div class="section-card__descripiton languages-entry">
+                            <p class="languages-entry__text"><i class="arrow-icon fa-solid fa-play"></i> Soft Skills</p>
+                        </div>
+                        <div class="section-card__descripiton languages-entry">
+                            <p class="languages-entry__text"><i class="arrow-icon fa-solid fa-play"></i> Analitycal Thinking</p>
+                        </div>
+                        <div class="section-card__descripiton languages-entry">
+                            <p class="languages-entry__text"><i class="arrow-icon fa-solid fa-play"></i> Assertiveness</p>
+                        </div>
+                        <div class="section-card__descripiton languages-entry">
+                            <p class="languages-entry__text"><i class="arrow-icon fa-solid fa-play"></i> Multitasking</p>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <footer class="footer">
-
+            <section class="hobbies" id="hobbies">
+                <div class="section-container hobbies-container wrapper">
+                    <div class="section-header hobbies-header">
+                        <h2 class="section-header__text hobbies-header__text"><i class="section-header__icon fa-solid fa-chess"></i> Hobbies</h2>
+                    </div>
+                    <hr class="section-header__underline">
+                    <div class="hobbies-cards">
+                        <div class="section-card__descripiton hobbies-entry">
+                            <i class="arrow-icon fa-solid fa-play"></i>
+                            <span class="hobbies-entry__text"> Sports: weight training, soccer, billiards, table tennis</span>
+                        </div>
+                        <div class="section-card__descripiton hobbies-entry">
+                            <i class="arrow-icon fa-solid fa-play"></i>
+                            <span class="hobbies-entry__text"> Technology news</span>
+                        </div>
+                        <div class="section-card__descripiton hobbies-entry">
+                            <i class="arrow-icon fa-solid fa-play"></i>
+                            <span class="hobbies-entry__text"> Historical fiction literature</span>
+                        </div>
+                        <div class="section-card__descripiton hobbies-entry">
+                            <i class="arrow-icon fa-solid fa-play"></i>
+                            <span class="hobbies-entry__text"> Film music</span>
+                        </div>
+                        <div class="section-card__descripiton hobbies-entry">
+                            <i class="arrow-icon fa-solid fa-play"></i>
+                            <span class="hobbies-entry__text"> Quizzes and crosswords</span>
+                        </div>
+                        <div class="section-card__descripiton hobbies-entry">
+                            <i class="arrow-icon fa-solid fa-play"></i>
+                            <span class="hobbies-entry__text"> Computer games</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class="footer" id="footer">
+                <div class="footer-description">
+                    <p class="footer-permission">
+                        I consent to the processing of my personal data for recruitment purposes in accordance with Art. 6 section 1 letter a Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016.
+                    </p>
+                </div>
+                <p class="footer-copy">&copy; 2024 CV Wojciech Wróbel</p>
             </footer>
         </main>
     </body>
