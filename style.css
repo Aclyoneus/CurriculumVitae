@@ -89,10 +89,6 @@ a:visited, a:hover, a:link, a:active {
     justify-content: space-around;
     font-size: 1.8rem;
     font-weight: bold;
-
-    /*@media (max-width: 768px) {*/
-    /*    padding: 0 0;*/
-    /*}*/
 }
 
 .navbar-link {
@@ -240,6 +236,14 @@ a:visited, a:hover, a:link, a:active {
 
 /*HOBBIES*/
 
+.hobbies-entry {
+    justify-content: flex-start;
+}
+
+.hobbies-entry__text {
+    padding-left: 5px;
+}
+
 /*FOOTER*/
 
 .footer-permission {
@@ -333,6 +337,26 @@ a:visited, a:hover, a:link, a:active {
 
     .section-list__text {
         margin-bottom: 0.8rem;
+    }
+
+    .achievements-entry {
+        display: flex;
+    }
+
+    .achievements-entry__container {
+        display: flex;
+    }
+
+    .achievements-entry__text {
+        padding-left: 5px;
+    }
+
+    .achievements-entry__date {
+        text-align: right;
+    }
+
+    .hobbies-entry {
+        display: flex;
     }
 
     .footer-permission {
