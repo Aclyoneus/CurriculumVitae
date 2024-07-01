@@ -1,0 +1,253 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    box-sizing: border-box
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+a:visited, a:hover, a:link, a:active {
+    text-decoration: none;
+    color: black;
+}
+
+.section-splitter {
+    margin: auto;
+    width: 70%;
+    border: none;
+    height: 1px;
+    color: black;
+    background-color: black;
+}
+
+.section-header__underline {
+    width: 60rem;
+    margin: auto;
+}
+
+.section-container {
+    height: 100%;
+    width: 100%;
+    padding: 2rem 5rem 2rem 5rem;
+    background-color: #fbfbfb;
+}
+
+.section-header {
+    display: flex;
+    justify-content: center;
+}
+
+.section-header__text {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    margin: 2rem 2rem 0.8rem 2rem;
+}
+
+.section-header__icon {
+    margin-right: 1rem;
+}
+
+/*HEADER*/
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+
+.header-logo {
+    width: 10rem;
+}
+
+.header-title {
+    padding-left: 2rem;
+    font-size: 3rem;
+    color: #fcf4a5;
+}
+
+/*NAVBAR*/
+
+.navbar-container {
+    padding: 0 30rem;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.navbar-link {
+    margin: 1rem 0;
+    border-bottom: 0.2rem solid rgba(0, 0, 0, 0);
+    transition: border-bottom 0.5s;
+}
+
+.navbar-link:hover {
+    border-bottom: 0.2rem solid #000;
+}
+
+/*PERSONALS*/
+
+.personals-upper {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.personals-photo {
+    height: 20rem;
+    border-radius: 50%;
+    position: relative;
+    top: 4rem;
+}
+
+.personals-lower {
+    padding-top: 3rem;
+    background-color: #fbfbfb;
+    display: flex;
+}
+
+.qrcode {
+    padding-left: 4rem;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.qrcode-image {
+    height: 13rem;
+    margin-top: 1rem;
+}
+
+.qrcode-description {
+    margin-bottom: 2rem;
+    padding: 3px 6px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+}
+
+.qrcode-description:hover {
+    color: #fcda05;
+}
+
+.personals-text {
+    width: 100%;
+    padding-right: 18rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.personals-text__name {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    letter-spacing: 0.3rem;
+}
+
+.personals-text__data {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 2.5rem;
+}
+
+.personals-text__line {
+    font-size: 1.8rem;
+}
+
+/*EXPERIENCE*/
+
+.section-card__title {
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+    font-size: 2rem;
+}
+
+.section-card__descripiton {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-description__text {
+    padding-left: 2.2rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.section-description__date {
+    min-width: 150px;
+}
+
+.section-list {
+    list-style-position: inside;
+    margin-top: 0.8rem;
+    padding-left: 2rem;
+}
+
+.arrow-icon {
+    transition: color 0.3s;
+}
+
+.section-card:hover .arrow-icon {
+    color: #fcda05;
+}
+
+/*EDUCATION*/
+
+/*ACHIEVEMENTS*/
+
+.achievements-entry, .languages-entry, .hobbies-entry {
+    margin-top: 2rem;
+}
+
+.section-card__descripiton:hover .arrow-icon {
+    color: #fcda05;
+}
+
+/*LANGUAGES*/
+
+/*SKILLS*/
+
+/*HOBBIES*/
+
+/*FOOTER*/
+
+.footer-permission {
+    padding: 1.5rem 0;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.footer-copy {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 0;
+    background-color: black;
+    color: #fcf4a5;
+    font-size: 1.5rem;
+}
