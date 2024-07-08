@@ -263,7 +263,6 @@ a:visited, a:hover, a:link, a:active {
 }
 
 @media (max-width: 768px) {
-
     .header-logo {
         width: 70px;
     }
